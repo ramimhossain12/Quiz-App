@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/quizpage.dart';
 
 class homepage extends StatefulWidget {
   @override
@@ -20,7 +21,8 @@ class _homepageState extends State<homepage> {
       padding: EdgeInsets.all(20.0,),
       child: InkWell(
         onTap: (){
-          debugPrint("Card Taped");
+         Navigator.of(context).pushReplacement(MaterialPageRoute(builder:
+         (context) => getjson()));
         },
         child: Material(
           color: Colors.indigoAccent,
@@ -37,7 +39,7 @@ class _homepageState extends State<homepage> {
                   child: Container(
                     height: 200,
                     width: 200,
-                    child: ClipOval( 
+                    child: ClipOval(
                      child: Image(
                        image: AssetImage(
                          image,
