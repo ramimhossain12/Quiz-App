@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/quizpage.dart';
+import 'package:quiz_app/quizepage.dart';
+
 
 class homepage extends StatefulWidget {
   @override
@@ -21,8 +22,11 @@ class _homepageState extends State<homepage> {
       padding: EdgeInsets.all(20.0,),
       child: InkWell(
         onTap: (){
-         Navigator.of(context).pushReplacement(MaterialPageRoute(builder:
-         (context) => getjson()));
+          Navigator.of(context).pushReplacement(MaterialPageRoute(builder:
+          (context) => getjson(),
+
+          ));
+
         },
         child: Material(
           color: Colors.indigoAccent,
@@ -63,7 +67,7 @@ class _homepageState extends State<homepage> {
                 Container(
                   padding: EdgeInsets.all(20.0),
                   child: Text(
-                    "This is some random description",
+                    "This is some random description This is some random description This is some random description This is some random description ",
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white,
